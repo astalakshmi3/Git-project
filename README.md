@@ -51,4 +51,26 @@ git add .gitignore
 git commit -m "Chore: add .gitignore"
 git push
 
-Ensures unnecessary files are ignored by Git."# Git-project" 
+# Task 2
+
+Clone, Rename, and Re-Publish
+
+# 1. Clone the Lexicon repository
+
+git clone https://github.com/Lexicon-Smaland/Hello-World.git
+cd Hello-World
+
+Creates a copy of the Lexicon “Hello-World” project on my computer.
+
+# 2. Change the remote to my own GitHub
+
+git remote set-url origin https://github.com/astalakshmi3/Hello-World.git
+
+# 3. Make a small edit and push
+
+echo "Edited by Astalakshmi" >> README.md
+git add README.md
+git commit -m "Chore: add editor note to README"
+git push -u origin main
+
+"Edited by Astalakshmi" 
